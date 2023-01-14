@@ -1,0 +1,286 @@
+body {
+  font-family: "Open Sans", sans-serif
+}
+
+/* no need to give overflow hidden property in body selector */
+
+
+.wall img {
+  width: 100%;
+  background-size: cover;
+  z-index: 1;
+  background-position: center center;
+  position: relative
+}
+
+/* CHANGES DONE BY EJAZ - removed the size of the width */
+.cc {
+  background-color: #377fc3;
+  background: -webkit-linear-gradient(rgba(84, 130, 173, .753) #19388d);
+  background:  linear-gradient(rgba(62, 154, 190, .699), #09f);
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  z-index: -1;
+  opacity: .8;
+  overflow: hidden;
+  padding: 0;
+}
+.imglogo{
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  left: 270px;
+  top: 136px;
+}
+.suma {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  left: 500px;
+}
+.bgnote{
+  opacity: 0.5;
+  
+}
+.suma h1 {
+  color: #faebd7;
+  font-size: 140px;
+  text-shadow: 8px 8px #9191915b;
+}
+
+.suma h4 {
+  color: #272727;
+  font-size: 50px;
+  text-shadow: 3px 3px #7d91ff5b;
+}
+@media (max-width: 578px) {
+  .suma h1{
+    font-size: 60px;
+    transform: translate(-440px,50px);
+    text-shadow: none;
+  }
+  .suma h4{
+    font-size: 30px;
+    transform: translate(-440px,50px);
+    text-shadow: none;
+  }
+  .imglogo{
+    transform: translate(-160px,-50px);
+    width: 120px;
+    height: 120px;
+  }
+}
+
+a {
+  color: #2487ce;
+  text-decoration: none
+}
+
+a:hover {
+  color: #469fdf;
+  text-decoration: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Raleway, sans-serif
+}
+
+@media screen and (max-width:768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important
+  }
+}
+
+#header {
+  transition: all .5s;
+  background: #fff;
+  z-index: 997;
+  padding: 15px 0;
+  border-bottom: 1px solid #e6f2fb
+}
+
+section {
+  padding: 30px 0;
+  overflow-y: hidden
+}
+
+.section-bg {
+  background-color: #e7f2fd
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 10px
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #124265
+}
+
+.section-title p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #919191
+}
+
+.about .content h3 {
+  font-weight: 600;
+  font-size: 26px
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0
+}
+
+.about .content ul li {
+  padding-left: 28px;
+  position: relative
+}
+
+.about .content ul li+li {
+  margin-top: 10px
+}
+
+.about .content ul i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 20px;
+  color: #2487ce;
+  line-height: 1
+}
+
+.about .content p:last-child {
+  margin-bottom: 0
+}
+
+.about .content .btn-learn-more {
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 5px;
+  transition: .3s;
+  line-height: 1;
+  color: #2487ce;
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s;
+  margin-top: 6px;
+  border: 2px solid #2487ce
+}
+
+.about .content .btn-learn-more:hover {
+  background: #2487ce;
+  color: #fff;
+  text-decoration: none
+}
+
+.counts {
+  padding: 60px 0
+}
+
+.counts .count-box {
+  width: 100%;
+  text-align: center
+}
+
+.counts .count-box span {
+  font-size: 48px;
+  line-height: 48px;
+  display: block;
+  font-weight: 700;
+  color: #124265;
+  margin-left: 80px;
+  margin: auto
+}
+
+.counts .count-box p {
+  padding: 8px 0 0 0;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #1e6ca6
+}
+
+@-webkit-keyframes pulsate-btn {
+  0% {
+    transform: scale(.6, .6);
+    opacity: 1
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0
+  }
+}
+
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(.6, .6);
+    opacity: 1
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0
+  }
+}
+
+.clients {
+  padding: 15px 0;
+  text-align: center
+}
+
+.clients img {
+  max-width: 45%;
+  transition: all .4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
+  filter: grayscale(100)
+}
+
+.clients img:hover {
+  filter: none;
+  transform: scale(1.15)
+}
+
+@media (max-width:768px) {
+  .clients img {
+    max-width: 40%
+  }
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0)
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0)
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
+}

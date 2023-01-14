@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./vendors/bootstrap/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/theme/swiper-bundle.min.css" />
+  <!-- ===============================================-->
+  <!--    Document Title-->
+  <!-- ===============================================-->
+  <title>Ozaann Healthcare | Expertise of &nbsp; &nbsp; &nbsp;Medical Products</title>
+
+
+  <!-- ===============================================-->
+  <!--    Favicons-->
+  <!-- ===============================================-->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://i.postimg.cc/gJHmNKWT/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/J7KRXKKy/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://i.postimg.cc/Vv71cL59/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="https://i.postimg.cc/hv4gw74P/favicon.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- ===============================================-->
+  <!--    Stylesheets-->
+  <!-- ===============================================-->
+  <link rel="stylesheet" href="./assets/css/section-main.css">
+  <link href="./assets/css/theme.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/theme/style.css">
+
+</head>
+
+
+<body>
+
+  <!-- ===============================================-->
+  <!-- <div id="preloader">
+
+  </div> -->
+  <!-- ===============================================-->
+  <main class="main" id="top" style="overflow: hidden">
+    <div class="poda" style="background-size: cover;
+    height: 650px; background: rgba(2, 0, 36, 0.575);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.5) 0%, 
+    rgb(82, 213, 233) 0%, rgba(255, 255, 255, 0.2) 100%);z-index:20;">
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-2" data-navbar-on-scroll="data-navbar-on-scroll">
+    <div class="container py-0"><a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" width="170" alt="logo" style="opacity: 1;" /></a>
+      <button id="nav-toggler-button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon img-fluid"> </span></button>
+      <div class="collapse navbar-collapse mt-4 mt-lg-0" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base" style="font-size: 18px;text-align: center;" id="nav-collapser">
+          <li class="nav-item px-lg-4"><a class="nav-link" aria-current="page" href="#home">Home</a></li>
+          <li class="nav-item px-lg-4"><a class="nav-link" href="#productssec">Products</a></li>
+          <li class="nav-item px-lg-4"><a class="nav-link" href="#aboutus">About Us</a></li>
+          <li class="nav-item px-lg-4"><a class="nav-link" href="#contactus">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+      <section class="py-xxl-10 " id="home" style="height: 650px; overflow: hidden;">
+        <div class="bg-holder mobview"
+          style="background-image:url(https://i.postimg.cc/ZnQXJfzn/2mg.jpg);background-position:top center;z-index:-101">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container">
+          <div class="row min-vh-xl-100 min-vh-xxl-25">
+            <div class="col-md-5 order-0 order-md-1 text-end imgrotateanimdiv"><img
+                class="pt-2 imgrotateanim pt-md-0 d-none d-md-block" src="https://i.postimg.cc/3xxpJXmT/animate.png"
+                alt="hero-header" /></div>
+            <div class="col-md-75 jay col-xl-6 col-xxl-5 text-md-start text-center py-4"
+              style="height: fit-content;border-radius: 5%; transform: translateY(30px)">
+              <h1 class="fw-light font-base fs-2 fs-md-5 fs-xxl-7" id="titledisp"> </h1>
+              <p class="fs-1 mb-5" style="color: #222132;" id="descdisp"> </p>
+              <a class="btn btn-lg btn-primary rounded-pill" href="#contactus" role="button" id="mkeap">Make an
+                Appointment</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Title Display Animation -->
+    <style>
+      #titledisp {
+        opacity: 0;
+        transition: opacity 2s;
+        /* font-size: 45px;
+        width: 700px; */
+      }
+
+      #descdisp {
+        opacity: 0;
+        transition: opacity 2s;
+      }
+
+      #mkeap {
+        opacity: 0;
+        transition: opacity 2s;
+      }
+    </style>
+    <script>
+      const myTimeout = setTimeout(displtitle, 3000);
+      function displtitle() {
+        document.getElementById("titledisp").innerHTML = "<strong>OZAANN Healthcare Products <br> has 20+ Years of Experience</strong>";
+        document.getElementById("titledisp").style.opacity = 1;
+      }
+      function myStopFunction() {
+        clearTimeout(myTimeout);
+      }
+      const desctimeout = setTimeout(desctitle, 4500);
+      function desctitle() {
+        document.getElementById("descdisp").innerHTML = "Ozaann Healthcare Products is a medical disposable manufacturing company with 20+ years of experience."
+        document.getElementById("descdisp").style.opacity = 1;
+      }
+      function myStopFunction() {
+        clearTimeout(desctimeout);
+      }
+      const mkeappoint = setTimeout(aptbtn, 5000);
+      function aptbtn() {
+        document.getElementById("mkeap").style.opacity = 1;
+      }
+      function myStopFunction() {
+        clearTimeout(mkeappoint);
+      }
+    </script>
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <div class="departments py-0" style="z-index: 300;"></div>
+    <section style="background-color: #1b97d581; height: 650px;">
+      <!--/.bg-holder-->
+      <div class="container pudhuanim">
+        <h1 class="text-center pb-5" id="about">OUR MAJOR PRODUCTS</h1>
+        <input type="radio" name="slider" style="width:350px ; height:400px" id="s1" checked>
+        <input type="radio" name="slider" style="width:350px ; height:400px" id="s2">
+        <input type="radio" name="slider" style="width:350px ; height:400px" id="s3">
+        <input type="radio" name="slider" style="width:350px ; height:400px" id="s4">
+        <input type="radio" name="slider" style="width:350px ; height:400px" id="s5">
+
+        <div class="cards">
+          <label for="s1" id="slide1"> 
+            <div class="card">
+              <div class="image">
+                <img src="https://i.postimg.cc/gkc4r0jn/Dressing-Pack.png" alt="">
+                
+              </div>
+              <div class="infos">
+                <span class="name drespack">Dressing Pack/Dialysis Kit</span>
+                <!-- <span class="lorem">Description about the product</span> -->
+              </div>
+              <a href="./sb/dressing/sbindex.html" class="btn-contact cnt1">View more</a>
+            </div>
+          </label>
+
+          <label for="s2" id="slide2">
+            <div class="card">
+              <div class="image">
+                <img src="https://i.postimg.cc/mrStcTtg/LSCS-Pack.jpg" alt="">
+                
+              </div>
+              <div class="infos">
+                <span class="name lscskit">LSCS Kit</span>
+                <!-- <span class="lorem">Description about the product</span> -->
+              </div>
+              <a href="./sb/lscs/sbindex.html" class="btn-contact cnt1">View more</a>
+            </div>
+          </label>
+
+          <label for="s3" id="slide3">
+            <div class="card">
+              <div class="image">
+                <img src="https://i.postimg.cc/Dy3t9kx4/11zon-cropped-2-Photo-Room-png-Photo-Room.png" alt="">
+                
+              </div>
+              <div class="infos">
+                <span class="name mopad">Mopping-Pad</span>
+                <!-- <span class="lorem">Description about the product</span> -->
+              </div>
+              <a href="./sb/mp/sbindex.html" class="btn-contact cnt1">View more</a>
+            </div>
+          </label>
+
+          <label for="s4" id="slide4">
+            <div class="card">
+              <div class="image">
+                <img src="https://i.postimg.cc/9MKR2JDd/swab.png"  alt="">
+                
+              </div>
+              <div class="infos">
+                <span class="name gze">Gauze Swabs</span>
+                <!-- <span class="lorem">Description about the product</span> -->
+              </div>
+              <a href="./sb/swabs-roller/swabs.html" class="btn-contact cnt1">View more</a>
+            </div>
+          </label>
+
+          <label for="s5" id="slide5">
+            <div class="card">
+              <div class="image">
+                <img src="https://i.postimg.cc/sfhmCMLw/11zon-cropped-1.jpg" alt="">
+                
+              </div>
+              <div class="infos">
+                <span class="name surgown">Surgeon Gown</span>
+                <!-- <span class="lorem">Description about the product</span> -->
+              </div>
+              <a href="./sb/Surgeon gown/sbindex.html" class="btn-contact cnt1">View more</a>
+            </div>
+          </label>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="pb-0" id="aboutus">
+      <h1 class="text-center pb-5 pr-1" id="about">ABOUT US</h1>
+      <div class="container d-hidden d-mb-block">
+        <div class="row align-items-center abtusdan">
+          <div class="col-md-6 order-lg-1 mb-5 md-mb-0 mb-lg-0"><img class="fit-cover rounded-circle w-75 legalindus"
+              src="https://i.postimg.cc/nLcxVpFr/legal-industry.png" alt="..." /></div>
+          <div class="col-md-6 text-center text-md-start">
+            <h2 class="fw-bold mb-4">We are developing a healthcare <br class="d-none d-sm-block" />system around
+              you
+            </h2>
+            <p>Ozaann Health Care are the leading manufacturers of medical<br class="d-none d-sm-block" />
+              disposables,
+              surgical kits and preventive wear made of high-quality <br class="d-none d-sm-block" /> materials
+              adhering
+              to
+              international standards.Keeping the health and<br class="d-none d-sm-block" /> hygiene of the end
+              user
+              in
+              mind,
+              our products are manufactured in a <br class="d-none d-sm-block" /> highly sterile manufactory with
+              utmost
+              care
+              and making the world a<br class="d-none d-sm-block" />better place by reducing the impact on the
+              environment.</p>
+
+            <a href="./sb/sbabt/index.html">
+              <div class="py-3">
+                <button class="btn btn-lg btn-outline-primary rounded-pill" type="submit"> More on Ozaann Products </button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="main" id="productssec">
+      <h1 class="text-center pb-5">OUR PRODUCTS</h1>
+      <!-- Buttons -->
+      <div class="filter my-4 row prodtitle mx-auto">
+        <button class="filter-btn my-2 my-md-2 mx-0 mx-md-1  col-4 col-sm-3 col-md-2 active btn-outline-secondary"
+          data-filter="*" id="all">All</button>
+        <button class="filter-btn my-2 my-md-2 mx-0 mx-md-1 col-4 col-sm-3 col-md-2 btn-outline-secondary"
+          data-filter=".one">Gauze</button>
+        <button class="filter-btn my-2 my-md-2 mx-0 mx-md-1 col-4 col-sm-3 col-md-2 btn-outline-secondary"
+          data-filter=".two">Disposable Kits</button>
+        <button class="filter-btn my-2 my-md-2 mx-0 mx-md-1 col-4 col-sm-3 col-md-2 btn-outline-secondary"
+          data-filter=".three">Surgical Pads</button><br>
+        <button class="filter-btn my-2 my-md-2 mx-0 mx-md-1 col-4 col-sm-3 col-md-2 btn-outline-secondary"
+          data-filter=".four">Drapes</button>
+        <button class="filter-btn my-2 my-md-2 mx-0 mx-md-1 col-4 col-sm-3 col-md-2 btn-outline-secondary"
+          data-filter=".five">Disposable Pads</button>
+        <button class="filter-btn my-2 my-md-2 mx-0 mx-md-1 col-4 col-sm-3 col-md-2 btn-outline-secondary"
+          data-filter=".six">Neurosurgical Patties</button>
+        <button class="filter-btn my-2 my-md-2 mx-0 mx-md-1 col-4 col-sm-3 col-md-2 btn-outline-secondary"
+          data-filter=".seven">Disposable Gowns</button>
+        <button class="filter-btn my-2 my-md-2 mx-0 mx-md-1 col-4 col-sm-3 col-md-2 btn-outline-secondary"
+          data-filter=".eight">Other products</button>
+      </div>
+      <!-- Cards -->
+      <!-- 1 -->
+      <div class="grid">
+        <a href="./sb/swabs-roller/swabs.html">
+          <div class="grid-item one col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/9MKR2JDd/swab.png" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Gauze Swabs</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./sb/swabs-roller/roller.html">
+          <div class="grid-item one col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/zGcxs1J3/gauz.png" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Roller Gauze/Bandage</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./sb/Gauze xray/sbindex.html">
+          <div class="grid-item one col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/kXjsSdRw/gx.png" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Gauze with x-ray indicator</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./sb/Green gauze/sbindex.html">
+          <div class="grid-item one col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/3xsgjr8j/Green-Gauze.png" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Green Gauze</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- 2 -->
+        <a href="./sb/lscs/sbindex.html">
+          <div class="grid-item two col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/mrStcTtg/LSCS-Pack.jpg" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>LSCS PACK</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./sb/ortho/sbindex.html">
+          <div class="grid-item two col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/28cpSMkN/Orthopedic-Pack.jpg" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>ORTHOPEDIC PACK</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./sb/patient/sbindex.html">
+          <div class="grid-item two col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/D0hh1XHV/Patient-Kit.png" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>PATIENT KIT</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./sb/surgicalkit/sbindex.html">
+          <div class="grid-item two col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/vTGR4dxb/Surgeon-Kit.jpg" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Surgeon Kit</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./sb/dressing/sbindex.html">
+          <div class="grid-item two col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/gkc4r0jn/Dressing-Pack.png" style="width:470px ; height:450px" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Dressing Pack/Dialysis Kit</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./sb/cysto/sbindex.html">
+          <div class="grid-item two col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/wMRd9rFG/Cystocopy-Pack.jpg" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Cystoscopy Pack</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./sb/mp/sbindex.html">
+          <div class="grid-item three col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/zDxKtFDG/Mopping-Pad.png" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Mopping pads</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./sb/mpx/sbindex.html">
+          <div class="grid-item three col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/3xxKL2RY/X-Ray-Deductable-Mopping-Pad-transformed.png" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Mopping pad with x-ray indicator</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./sb/gamjee-surgi/roller.html">
+          <div class="grid-item three col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/Y918LGQm/Gamjee-Pad-1.png" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Gamjee pads</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./sb/gamjee-surgi/swabs.html">
+          <div class="grid-item three col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/vBV8rMmn/Surgi-Pad.png" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Surgi pads</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./sb/underpad-eyepad/roller.html">
+          <div class="grid-item three col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/nVG0HmHy/Eye-Pads.jpg" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Eye Pads</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- 4 -->
+        <a href="./sb/dispbed/sbindex.html">
+          <div class="grid-item four col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/cCRjWkF2/dp-1.jpg" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Disposable bed and Pillow covers</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="./sb/Surgidrape/sbindex.html">
+          <div class="grid-item four col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/fRqM1ktX/Surgi-Drape.png" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Surgi Drape</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./sb/Surgidrapepp/sbindex.html">
+          <div class="grid-item four col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/w3K6fr7r/Surgi-Drape-PP.png" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Surgi Drape (PP)</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./sb/centreholesheet/sbindex.html">
+          <div class="grid-item four col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/sxTY5px1/centre-hole-sheet.png" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Centre Hole Sheet</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./sb/HipUdrape/sbindex.html">
+          <div class="grid-item four col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/FzNpyrxC/hip2.jpg" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Hip U Drape</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- 5 -->
+        <a href="./sb/underpad-eyepad/swabs.html">
+          <div class="grid-item five col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/WbbLjTP7/Under-Pad-Premium.png" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Under Pads</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 6 -->
+        <a href="./sb/nuero/sbindex.html">
+          <div class="grid-item six col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/fRtc0SNT/neuro.png" style="width:450px; height:200px ;" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Neurosurgical Patties</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 7 -->
+        <a href="./sb/Patient gown/sbindex.html">
+          <div class="grid-item seven col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/ZYvvHtQV/Patient-gown4.png" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Patient Gown</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./sb/Surgeon gown/sbindex.html">
+          <div class="grid-item seven col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/Dz3FqNGT/dsg.jpg" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Surgeon Gown</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./sb/Reinforced gown/sbindex.html">
+          <div class="grid-item seven col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/yY59B6Zq/Reinforced-Surgeon-Gow.png" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Reinforced Surgeon Gown</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      
+        <a href="./sb/cotton ball-forceps/swabs.html">
+          <div class="grid-item eight col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/rsGWJk2y/11zon-cropped-3.jpg" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Cotton balls</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="./sb/cotton ball-forceps/roller.html">
+          <div class="grid-item eight col-12 col-md-4">
+            <div class="gallery-image">
+              <img src="https://i.postimg.cc/bNqVbTCY/Forceps.png" />
+              <div class="img-overlay">
+                <div class="plus"></div>
+                <div class="img-description">
+                  <h3>Disposable Forceps</h3>
+                  <h5>Click to view</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- end product list -->
+      </div>
+    </section>
+
+
+
+    <!-- new section -->
+
+    <section class="py-4" id="contactus">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-12">
+
+            <!--/.bg-holder-->
+
+            <h1 class="text-center">CONTACT US</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container py-5">
+        <div class="row">
+          <div class="bg-holder bg-size"
+            style="background-image:url(https://i.postimg.cc/ydVZJ0SB/cta-bg.png);background-position:bottom right;background-size:auto;">
+          </div>
+          <!--/.bg-holder-->
+
+          <div class="col-lg-6 z-index-2 mb-5"><img class="w-100" src="https://i.postimg.cc/zDdrdjM9/appointment.png"
+              alt="..." />
+          </div>
+          <div class="col-lg-6 z-index-2">
+            <!-- Deployment URL: https://og-backend.onrender.com/sendmail/ -->
+            <!-- Production URL: http://localhost:8000/sendmail/ -->
+            <form class="row g-3" onsubmit="event.preventDefault()">
+              <div class="col-md-6">
+                <label class="visually-hidden" for="inputName">Name</label>
+                <input class="form-control form-livedoc-control" id="inputName" type="text" placeholder="Name"
+                  name="name" onkeydown="return /[a-z]/i.test(event.key)" minlength="4" />
+              </div>
+              <div class="col-md-6">
+                <label class="visually-hidden" for="inputPhone">Phone</label>
+                <input class="form-control form-livedoc-control" id="inputPhone" type="number" placeholder="Phone"
+                  name="phone" minlength="10" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label visually-hidden" for="inputCategory">Category</label>
+                <select class="form-select" id="inputCategory" name="category">
+                  <option selected="selected">Category</option>
+                  <option> Gauze</option>
+                  <option> Disposable Kits</option>
+                  <option> Surgical Pads</option>
+                  <option> Drapes</option>
+                  <option> Disposable Pads</option>
+                  <option> Other Products</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label visually-hidden" for="inputEmail">Email</label>
+                <input class="form-control form-livedoc-control" id="inputEmail" type="email" placeholder="Email"
+                  name="email" pattern="+@/.com" />
+              </div>
+              <div class="col-md-12">
+                <label class="form-label visually-hidden" for="validationTextarea">Message</label>
+                <textarea class="form-control form-livedoc-control" id="validationTextarea" placeholder="Message"
+                  name="message" style="height: 250px;"></textarea>
+              </div>
+              <div class="col-12">
+                <div class="d-grid">
+                  <button class="btn btn-primary rounded-pill" type="submit"
+                    onclick="handleFormSubmit()">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+
+    <section class="py-2">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 py-0">
+
+
+            <h1 class="text-center pt-4">WHY CHOOSE US?</h1>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section style="padding-top: 20px; padding-bottom: 500px">
+      <div class="bg-holder bg-size d-none d-md-block"
+        style="background-image:url(https://i.postimg.cc/8CdvPZct/dot-bg.png);background-position:top left;background-size:auto;">
+      </div>
+
+      <div class="container-fluid h-75 containerforshowcase">
+        <div class="c1">
+          <div>
+            <img class="imgfirst" src="https://i.postimg.cc/Dz4xFYZ6/goal.jpg" alt="">
+          </div>
+          <p>
+            Our Main Goal is to provide valuble hygiene,
+            Quality products to our customers and ensure
+            thier trust towards our Company
+        </div>
+
+        <div class="c2">
+          <div>
+            <img class="img2" src="https://i.postimg.cc/02HGQdhB/mission.jpg" alt="">
+          </div>
+          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            Our Main Mission of the company is to add greater value
+            for its customers and to the world we live in, by bringing
+            down the impact on the environment.
+          </p>
+        </div>
+
+        <div class="c3">
+          <div>
+            <img class="img3" src="https://i.postimg.cc/287Trcd5/future.jpg" alt="">
+          </div>
+          <p>
+            We Always ensure our quality and quantity by using latest
+            Technology and we alwasy try to make sure our customers is
+            satisfied with our products.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+    
+
+    <!-- ======================== comment ended by kd ================================ -->
+    <section class="py-0 bg-secondary" id="footercls">
+
+      <div class="container-lg footr" style="padding-top: 50px;padding-bottom: 30px;overflow:hidden;">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-lg-6 mb-4 order-0 order-sm-0 d-md-block text-center text-md-start"><a
+              class="text-decoration-none" href="#home"><img src="assets/img/footer-logo.png" height="170" alt="" /></a>
+            <p class="text-light my-4 text-center text-md-start"
+              style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:medium;">
+              OZAANN
+              is one of the
+              leading preventive wear<br> (Medical Textiles) manufacturer
+              in
+              India.<br>Providing these services for more than 20+ Years.</p>
+          </div>
+
+          <div class="col-12 text-center text-md-start none mx-auto mx-md-0 col-sm-4 col-lg-2 mb-3 btmthallu">
+            <h5 class="lh-lg fw-bold mb-4 text-light font-sans-serif">PRODUCTS</h5>
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg"><a class="footer-link" href="#productssec">Gauze</a></li>
+              <li class="lh-lg"><a class="footer-link" href="#productssec">Disposable Kits</a></li>
+              <li class="lh-lg"><a class="footer-link" href="#productssec">Surgical Pads</a></li>
+              <li class="lh-lg"><a class="footer-link" href="#productssec">Drapes</a></li>
+              <li class="lh-lg"><a class="footer-link" href="#productssec">Disposable Pads</a></li>
+              <li class="lh-lg"><a class="footer-link" href="#productssec">Neurosurgical Patties</a></li>
+              <li class="lh-lg"><a class="footer-link" href="#productssec">Disposable Gowns</a></li>
+              <li class="lh-lg"><a class="footer-link" href="#productssec">Other Products</a></li>
+
+            </ul>
+          </div>
+          <div class="col-12 text-center text-md-start none mx-auto mx-md-0 col-sm-4 col-lg-2 mb-3 btmthallu">
+            <h5 class="lh-lg fw-bold mb-4 text-light font-sans-serif">USEFUL LINKS</h5>
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg"><a class="footer-link" href="#home">Home</a></li>
+              <li class="lh-lg"><a class="footer-link" href="#about">About Us</a></li>
+              <li class="lh-lg"><a class="footer-link" href="#productssec">Products</a></li>
+              <li class="lh-lg"><a class="footer-link" href="#contactus">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-12 text-center text-md-start none mx-md-0 col-sm-4 col-lg-4 btmthallu andcont">
+            <h5 class="lh-lg fw-bold mb-4 text-light font-sans-serif">CONTACT</h5>
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg"><a class="footer-link" href="https://goo.gl/maps/nRz742yH7Q4u4gWF9">
+                  <i class="fa-solid fa-house"></i> #2, 2nd floor,<br> Nerkundram
+                  Pathai,<br>Vadapalani, Chennai-600026</a></li>
+              <li class="lh-lg"><a class="footer-link"
+                  href="mailto:ozaann@rediffmail.com?subject=Product%20Enquiry&body=Name%3A%0D%0APhone%20Number%3A%0D%0AMail%3A">
+                  <i class="fa-solid fa-envelope"></i>&nbsp; ozaann@rediffmail.com</a></li>
+              <li class="lh-lg"><a class="footer-link" href="tel:04423622840">
+                  <i class="fa-solid fa-phone-volume"></i>&nbsp;&nbsp; 044 23622840</a></li>
+              <li class="lh-lg"><a class="footer-link" href="tel:+917358667415">
+                  <i class="fa-solid fa-square-phone"></i>&nbsp;&nbsp;+91 7358667415</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-0 bg-primary">
+
+        <div class="container" style="height: 70px;">
+          <p class="my-2 fw-bold text-center text-200" style="transform: translateY(25px);">All rights Reserved
+            &copy;
+            Ozaann
+            Healthcare</p>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+    </section>
+  </main>
+  <!-- ===============================================-->
+  <!--    End of Main Content-->
+  <!-- ===============================================-->
+
+
+
+
+  <!-- ===============================================-->
+  <!--    JavaScripts-->
+  <!-- ===============================================-->
+
+  <!-- Form Validation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js" integrity="sha512-wdUM0BxMyMC/Yem1RWDiIiXA6ssXMoxypihVEwxDc+ftznGeRu4s9Fmxl8PthpxOh5CQ0eqjqw1Q8ScgNA1moQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Bootstrap JavaScript Libraries -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/isotope.pkgd.min.js"></script>
+  <script src="./vendors/is/is.min.js"></script>
+  <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+
+  <script src="assets/js/theme.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fjalla+One&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&amp;display=swap"
+    rel="stylesheet">
+
+</body>
+
+</html>

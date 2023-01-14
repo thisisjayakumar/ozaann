@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+}
+.navcssedit{
+  height: 80px;
+  backdrop-filter: blur(5%);
+  background: #fff
+}
+.product__img img{
+  width: 450px;
+  margin-left:40px;
+  margin-top: 60px;
+}
+.contentinsidenav{
+  margin-left: 50%;
+}
+.hpac{
+  margin-right: 30px;
+}
+.getquotecss:hover{
+  color: white;
+}
+@media (max-width: 578px) {
+  .cover-bg{
+    background: #139de898;
+  }
+  .contentinsidenav{
+    margin-left: 0%;
+  }
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f6f6;
+  position: relative;
+}
+.container .box {
+  width: 0%;
+  height: 620px;
+  background: #FFF;
+  position: absolute;
+  animation: openBox 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+}
+.container .box .product__img {
+  width: 600px;
+  position: absolute;
+  left: -150px;
+  top: 50px;
+  opacity: 0;
+  animation: fadeImg 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.container .box .product__video {
+  width: 320px;
+  height: 100px;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+.container .box .product__video .video {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  opacity: 0;
+  animation: upVideo 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 1.2s;
+}
+.container .box .product__video .video i {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #F71568;
+  border: 2px solid #F71568;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  transition: ease-in-out 220ms;
+  cursor: pointer;
+}
+.container .box .product__video .video i:hover {
+  background: #F71568;
+  color: #fff;
+  box-shadow: 0 0 26px #F71568;
+}
+.container .box .product__video .video p {
+  margin-left: 25px;
+  font-family: "Poppins";
+}
+.container .box .product__disc {
+  width: 0px;
+  height: 430px;
+  background: #139de88e;
+  backdrop-filter: blur(10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0px;
+  top: 30px;
+  animation: showDisc 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+}
+.container .box .product__disc .product__disc--content {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  animation: fadeContent 1s ease-in-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+.container .box .product__disc .product__disc--content .disc__content--about {
+  width: 100%;
+}
+.container .box .product__disc .product__disc--content .disc__content--about h1 {
+  font-size: 26px;
+  margin-top: -23px;
+  font-family: "poppins";
+}
+.container .box .product__disc .product__disc--content .disc__content--about span {
+ 
+  font-size: 14px;
+  display: flex;
+  opacity: 0.5;
+}
+.container .box .product__disc .product__disc--content .disc__content--about p {
+ 
+  font-family: "Poppins";
+}
+
+.container .box .product__disc .product__disc--content .disc__content--about ol {
+  margin-left: -30px;
+  line-height: 8px;
+  font-size: 14px;
+  margin-top: -5px;
+}
+.container .box .product__disc .product__disc--content .product__view--more {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.container .box .product__disc .product__disc--content .product__view--more:hover .view__more--block {
+  width: 280px;
+  height: 35px;
+}
+.container .box .product__disc .product__disc--content .product__view--more .view__more--block {
+  width: 10px;
+  height: 15px;
+  position: absolute;
+  background: #f6f6f6;
+  z-index: 1;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+}
+.container .box .product__disc .product__disc--content .product__view--more p {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  color: black;
+  transform: translateY(-25px);
+  margin-left: 15px;
+ 
+}
+.container .box .product_buttons {
+  width: 500px;
+  height: 100px;
+  bottom: 70px;
+  right: -50px;
+  position: absolute;
+}
+.product_buttons .btn {
+  width: 240px;
+  height: 70%;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Poppins";
+  -webkit-transition: ease-in-out 220ms;
+  -moz-transition: ease-in-out 220ms;
+  -ms-transition: ease-in-out 220ms;
+  -o-transition: ease-in-out 220ms;
+  transition: ease-in-out 220ms;
+  cursor: pointer;
+}
+.product_buttons .wishlist {
+  border: 2px solid #555555;
+  background: transparent;
+  color: #555555;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  opacity: 0;
+  animation: fadeWish 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 1s;
+}
+.product_buttons .wishlist:hover {
+  background: #555555;
+  color: #FFF;
+  box-shadow: 0 0 26px #555555;
+}
+.product_buttons .buy {
+  border: none;
+  background: #555555;
+  color: #FFF;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  animation: fadeBuy 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 1s;
+}
+.product_buttons .buy:hover {
+  box-shadow: 0 0 26px #555555;
+}
+@media (max-width: 578px) {
+  .product_buttons .btn {
+    width: 100px;
+    height: 8%;
+    top: 185%;
+    font-size: 10px;
+}
+.nav-img {
+  width: 35%;
+}
+a img{
+  height: 30%;
+}
+.product_buttons .wishlist{
+  left: 70px;
+}
+.product_buttons .buy{
+  right: 70px;
+}
+}
+
+/* -------------------form------------- */
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  height: 320px;
+  width: 350px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  border-radius: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 350px;
+  height: 320px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.384);
+  border-radius: 5%;
+}
+
+/* Full-width input fields */
+.form-container input[type=text]{
+  width: 90%;
+  padding: 5px;
+  margin: 5px 0 23px 0;
+  border: none;
+  background: #f1f1f17a;
+  border-radius: 5%;
+  margin-left: 20px;
+}
+.emailorph{
+  margin-left: 20px;
+}
+.msginform{
+  margin-left: 20px;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus {
+  background-color: rgba(255, 255, 255, 0.575);
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 6px 5px;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+  width: 40%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: rgba(255, 0, 0, 0.596);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes openBox {
+  0% {
+    width: 0px;
+    left: 15%;
+  }
+  100% {
+    width: 900px;
+    left: 15%;
+  }
+}
+@keyframes fadeImg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes upVideo {
+  0% {
+    opacity: 0;
+    bottom: -20px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+@keyframes showDisc {
+  0% {
+    width: 0px;
+    left: 450px;
+  }
+  100% {
+    width: 500px;
+    left: 450px;
+  }
+}
+@keyframes fadeContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeWish {
+  0% {
+    opacity: 0;
+    bottom: -25px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@keyframes fadeBuy {
+  0% {
+    opacity: 0;
+    bottom: -25px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+/*ignore*/
+footer {
+  width: 350px;
+  height: 80px;
+  background: #FFCA1B;
+  position: absolute;
+  right: 0;
+  bottom: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: top 0.8s forwards;
+}
+footer span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #fff;
+  font-family: "Poppins";
+}
+footer span i {
+  margin-right: 25px;
+  font-size: 22px;
+  color: #fff;
+  animation: icon 2s forwards;
+  opacity: 0;
+}
+
+@keyframes top {
+  0% {
+    opacity: 0;
+    bottom: -80px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+@keyframes icon {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3) rotate(-2deg);
+  }
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
